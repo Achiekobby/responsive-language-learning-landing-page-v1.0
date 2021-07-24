@@ -44,7 +44,7 @@ p {
   width: 100%;
 
   .navbar__container {
-    max-width: 1200px;
+    max-width: 1280px;
     height: 80px;
     margin: 0 auto;
 
@@ -107,7 +107,7 @@ p {
 //HERO STYLING BEGINS HERE
 section.hero {
   .hero__container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 
     .hero__wrapper {
@@ -315,7 +315,7 @@ section.steps {
   margin: 6rem 0 2rem;
 
   .steps__container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
 
@@ -581,6 +581,225 @@ section.steps {
   }
 }
 // STEPS STYLING ENDS HERE
+
+//LANGUAGES STYLING STARTS HERE
+section.languages {
+  margin: 10rem 0 2rem;
+
+  .languages__container {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    .topLine {
+      text-transform: uppercase;
+      font-size: 1.64rem;
+      font-weight: 600;
+      color: var(--headline);
+      margin-bottom: 30px;
+    }
+
+    .headLine {
+      color: var(--primaryColor);
+      font-size: 3.16rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+
+    .languages__wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 100px;
+
+      .languages__content {
+        .languages__title {
+          font-size: 1.6rem;
+          font-weight: 600;
+          color: var(--primaryColor);
+          margin-bottom: 20px;
+          text-transform: capitalize;
+
+          span {
+            color: #ff006e;
+          }
+        }
+
+        .language__description {
+          max-width: 550px;
+          color: #777;
+          font-weight: normal;
+          line-height: 2;
+          font-size: 1.25rem;
+        }
+
+        .languages__button {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-top: 30px;
+          width: 80%;
+          padding: 1rem 0;
+
+          .btn__watch {
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+              background: #fff;
+              padding: 1rem 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: var(--primaryColor);
+              font-size: 1.54rem;
+              margin-right: 3px;
+              border: none;
+              border-radius: 50%;
+              box-shadow: -3px 5px 10px rgba(203, 234, 252, 0.75);
+            }
+
+            .btn__outline {
+              color: var(--primaryColor);
+              font-weight: 600;
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+
+      .languages__img {
+        position: relative;
+
+        .img {
+          width: 550px;
+          height: 580px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 30% 0 30%;
+          }
+
+          &::after {
+            content: "";
+            width: 80%;
+            height: 80%;
+            background: #005327;
+            opacity: 0.95;
+            position: absolute;
+            bottom: -10px;
+            right: -15px;
+            display: block;
+            z-index: -1;
+          }
+
+          .pricing__card {
+            position: absolute;
+            top: 50px;
+            left: -100px;
+            width: 220px;
+            background: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: -3px 1px 5px rgba(203, 234, 252, 0.75);
+
+            ion-icon {
+              background: var(--headline);
+              color: #fff;
+              padding: 0.85rem 0.85rem;
+              border-radius: 5px;
+              font-size: 1.5rem;
+              display: flex;
+              justify-content: center;
+              margin: 0 auto;
+              transform: translateY(-20px);
+            }
+            .heading {
+              color: #777;
+              font-size: 1.15rem;
+              font-weight: 600;
+              text-align: center;
+            }
+
+            .content {
+              .amount {
+                font-size: 2.26rem;
+                font-weight: 600;
+                color: var(--primaryColor);
+                text-align: center;
+                margin-bottom: 5px;
+              }
+
+              .amount__desc {
+                font-size: 0.8rem;
+                color: #777;
+                font-weight: normal;
+                text-align: center;
+                padding: 0 0.85rem;
+                padding-bottom: 0.56rem;
+              }
+            }
+          }
+
+          .how__to-card {
+            position: absolute;
+            right: 100px;
+            bottom: -100px;
+            padding: 0.5rem 0.5rem;
+            width: 250px;
+            background: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 5px 5px rgba(203, 234, 252, 0.75);
+
+            .img__flag {
+              width: 60px;
+              height: 60px;
+              border-radius: 10px;
+              border: none;
+              margin: 20px auto;
+
+              img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                object-fit: cover;
+                margin: 0 auto;
+              }
+            }
+
+            .title {
+              padding: 0.2rem 1.3rem;
+              font-size: 1.45rem;
+              text-align: center;
+              color: var(--primaryColor);
+
+              span {
+                color: #ff006e;
+              }
+            }
+
+            .desc {
+              p {
+                font-size: .85rem;
+                font-weight: normal;
+                color: #777;
+                padding: 0.3rem 0.75rem;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//LANGUAGES STYLING ENDS HERE
 
 //BUTTONS STYLING STARTS HERE
 .btn__primary {
