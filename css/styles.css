@@ -696,6 +696,134 @@ section.languages .languages__container .languages__wrapper .languages__img .img
   text-align: center;
 }
 
+section.pricing {
+  margin: 10rem 0 2rem;
+}
+section.pricing .pricing__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+section.pricing .pricing__container .topLine {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--headline);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+section.pricing .pricing__container .headLine {
+  color: var(--primaryColor);
+  text-transform: capitalize;
+  font-size: 3.16rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+section.pricing .pricing__container .pricing__desc {
+  font-size: 1.35rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: normal;
+  color: #242020;
+}
+section.pricing .pricing__container .pricing__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card {
+  width: 450px;
+  background: #d7ebff;
+  border-radius: 50px;
+  border: none;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .title {
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+  margin-top: 3rem;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .subtitle {
+  font-size: 1.95rem;
+  color: var(--headline);
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
+  margin-bottom: 40px;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .subtitle span {
+  color: #777;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card hr {
+  padding: 0 2rem;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #d7ebff;
+  opacity: 0.75;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .package__list {
+  padding: 2.5rem 3rem;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .package__list .package__items {
+  margin-bottom: 40px;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .package__list .package__items .package {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .package__list .package__items .package i {
+  color: var(--headline);
+  margin-right: 10px;
+  font-size: 1.25rem;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .package__list .package__items .package i.fa-times {
+  color: #a70b0b;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .package__list .package__items .package p {
+  font-size: 1.15rem;
+  color: var(--primaryColor);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card .package__list a {
+  background: transparent;
+  border: 2px solid var(--headline);
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--headline);
+  font-size: 1.25rem;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card:nth-child(2) {
+  background: #03045e;
+  transform: scale(1.01);
+  box-shadow: 1px 5px 10px rgba(9, 10, 32, 0.75);
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card:nth-child(2) .title {
+  color: #fff;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card:nth-child(2) .subtitle span {
+  color: #fff;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card:nth-child(2) .package__list .package__items .package p {
+  color: #fff;
+}
+section.pricing .pricing__container .pricing__wrapper .pricing__card:nth-child(2) .package__list a {
+  background: var(--headline);
+  color: #fff;
+}
+
 .btn__primary {
   color: #fff;
   font-size: 0.9rem;
