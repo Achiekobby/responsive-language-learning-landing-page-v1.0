@@ -804,11 +804,12 @@ section.languages {
 // PRICING STYLING STARTS HERE
 section.pricing {
   margin: 10rem 0 2rem;
+  background: #f4f4f4;
 
   .pricing__container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 60px 20px;
 
     .topLine {
       font-size: 1.65rem;
@@ -925,7 +926,7 @@ section.pricing {
         &:nth-child(2) {
           background: #03045e;
           transform: scale(1.01);
-          box-shadow: 1px 5px 10px rgba(9, 10, 32, 0.75);
+          box-shadow: -3px 10px 10px 0px rgba(203, 234, 252, 0.75);
 
           .title {
             color: #fff;
@@ -956,6 +957,261 @@ section.pricing {
   }
 }
 // PRICING STYLING ENDS HERE
+
+// COMMENTS STYLING STARTS HERE
+section.comments {
+  margin: 6rem 0 2rem;
+
+  .comments__container {
+    max-width: 1280px;
+    padding: 30px 20px;
+    margin: 0 auto;
+
+    .topLine {
+      color: var(--headline);
+      font-size: 1.65rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .headLine {
+      font-size: 3.16rem;
+      color: var(--primaryColor);
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+
+    .comments__wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .prev__button {
+        height: 100px;
+        width: 100px;
+        padding: 2rem 2rem;
+        color: var(--headline);
+        background: #fff;
+        font-size: 3rem;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(50px);
+        box-shadow: -3px 10px 10px 0px rgba(203, 234, 252, 0.75);
+      }
+
+      .next__button {
+        height: 100px;
+        width: 100px;
+        padding: 2rem 2rem;
+        color: #fff;
+        background: var(--headline);
+        font-size: 3rem;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-50px);
+        box-shadow: -3px 10px 10px 0px rgba(203, 234, 252, 0.75);
+        transition: 0.5s ease;
+      }
+
+      .comment__card {
+        width: 100%;
+        height: 500px;
+        background: #fff;
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        box-shadow: -3px 10px 10px 0px rgba(203, 234, 252, 0.75);
+
+        .card__content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .img__wrapper {
+            flex-basis: 40%;
+            width: 90%;
+            height: 90%;
+            border-radius: 20px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 20px;
+            }
+          }
+
+          .comment__content {
+            margin-left: 50px;
+            margin-right: 20px;
+            flex-basis: 60%;
+            text-align: center;
+            i {
+              color: var(--headline);
+              font-size: 3.16rem;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 30px;
+            }
+
+            p {
+              color: #777;
+              line-height: 2;
+              font-size: 1.12rem;
+            }
+
+            h3 {
+              margin-top: 30px;
+              color: var(--primaryColor);
+              font-size: 1.24rem;
+              margin-bottom: 10px;
+              font-weight: 600;
+            }
+
+            h4 {
+              color: #777;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// COMMENTS STYLING ENDS HERE
+
+// FOOTER STYLING STARTS HERE
+section.footer {
+  width: 100%;
+  background: var(--primaryColor);
+  margin-top: 6rem;
+  margin-bottom: 0;
+  padding-right: 80px;
+  padding-left: 80px;
+
+  .footer__container {
+    padding: 10px 20px;
+
+    .footer__wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .col {
+        margin-right: 30px;
+        padding: 3.5rem 0;
+
+        .logo {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          ion-icon {
+            margin-right: 5px;
+            color: #fff;
+            font-size: 2.65rem;
+            display: inline;
+          }
+        }
+        h2 {
+          color: #fff;
+          font-weight: 600;
+          font-size: 2.45rem;
+          margin-bottom: 30px;
+        }
+
+        ul {
+          color: #fff;
+          li {
+            margin-bottom: 30px;
+
+            a {
+              color: #fff;
+              font-size: 1.04rem;
+              transition: all 0.5s ease;
+
+              &:hover {
+                color: var(--headline);
+              }
+            }
+          }
+        }
+
+        .social__icons {
+          margin-top: 10px;
+
+          i {
+            margin-right: 5px;
+            color: #fff;
+            font-size: 1.85rem;
+          }
+        }
+      }
+
+      form {
+        margin-bottom: 20px;
+        background: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ion-icon {
+          padding: 1rem 1rem;
+          background: var(--primaryColor);
+          color: #fff;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+
+        input {
+          outline: none;
+          border: none;
+          font-size: 1.05rem;
+
+          &::placeholder {
+            color: var(--primaryColor);
+            font-family: "Poppins", sans-serif;
+          }
+
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  p {
+    color: #fff;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
+// FOOTER STYLING ENDS HERE
 
 //BUTTONS STYLING STARTS HERE
 .btn__primary {
