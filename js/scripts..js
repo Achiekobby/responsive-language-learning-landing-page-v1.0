@@ -2,7 +2,6 @@ const MenuBtn = document.getElementById("menu-toggle");
 const CloseBtn = document.getElementById("close-menu");
 const NavMenu = document.getElementById("nav-menu");
 
-
 MenuBtn.addEventListener("click", () => {
   NavMenu.classList.toggle("show");
 });
@@ -22,4 +21,5 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(`.active__card,.num-card,.card__comment,.card__stats,
 
-.how__to-card,.pricing__card, .reveal`);
+.how__to-card,.pricing__card, .reveal,.card__content`);
+
