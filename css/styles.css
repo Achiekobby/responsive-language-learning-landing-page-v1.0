@@ -961,7 +961,8 @@ section.footer .footer__container {
 section.footer .footer__container .footer__wrapper {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 section.footer .footer__container .footer__wrapper .col {
   margin-right: 30px;
@@ -1157,6 +1158,142 @@ section.footer p {
   section.hero .hero__container .partners__logos .brand__logo {
     width: 120px;
     margin: 20px 0;
+  }
+
+  section.steps .steps__container .headLine {
+    font-size: 2.2rem;
+  }
+  section.steps .steps__container .steps__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.steps .steps__container .steps__wrapper .leftSide {
+    margin-top: -40px;
+  }
+  section.steps .steps__container .steps__wrapper .leftSide .sectionImg {
+    width: 300px;
+  }
+  section.steps .steps__container .steps__wrapper .leftSide .active__card {
+    display: none;
+  }
+  section.steps .steps__container .steps__wrapper .leftSide .num-card {
+    display: none;
+  }
+  section.steps .steps__container .steps__wrapper .rightSide {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section.languages .languages__container .headLine {
+    font-size: 2.2rem;
+  }
+  section.languages .languages__container .languages__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.languages .languages__container .languages__wrapper .languages__img {
+    margin-top: -40px;
+  }
+  section.languages .languages__container .languages__wrapper .languages__img .img {
+    width: 300px;
+    height: 270px;
+  }
+  section.languages .languages__container .languages__wrapper .languages__img .img .pricing__card {
+    display: none;
+  }
+  section.languages .languages__container .languages__wrapper .languages__img .img .how__to-card {
+    display: none;
+  }
+  section.languages .languages__container .languages__wrapper .languages__content {
+    margin-top: 50px;
+  }
+  section.languages .languages__container .languages__wrapper .languages__content .languages__title {
+    font-size: 1.35rem;
+  }
+  section.languages .languages__container .languages__wrapper .languages__content .language__description {
+    font-size: 1.15rem;
+  }
+  section.languages .languages__container .languages__wrapper .languages__content .languages__button {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  section.languages .languages__container .languages__wrapper .languages__content .languages__button .btn__primary {
+    padding: 1.2rem 1.2rem;
+  }
+
+  section.pricing .pricing__container .headLine {
+    font-size: 2.2rem;
+  }
+  section.pricing .pricing__container .pricing__desc {
+    font-size: 1.05rem;
+  }
+  section.pricing .pricing__container .pricing__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.pricing .pricing__container .pricing__wrapper .pricing__card {
+    width: 300px;
+  }
+
+  section.comments .comments__container .headLine {
+    font-size: 2.2rem;
+  }
+  section.comments .comments__container .comments__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.comments .comments__container .comments__wrapper .prev__button {
+    position: absolute;
+    top: -10px;
+    left: 60px;
+  }
+  section.comments .comments__container .comments__wrapper .next__button {
+    position: absolute;
+    bottom: -60px;
+    right: 60px;
+  }
+  section.comments .comments__container .comments__wrapper .comment__card {
+    margin-top: 60px;
+    height: auto;
+  }
+  section.comments .comments__container .comments__wrapper .comment__card .card__content {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  section.comments .comments__container .comments__wrapper .comment__card .card__content .img__wrapper {
+    width: 300px;
+  }
+  section.comments .comments__container .comments__wrapper .comment__card .card__content .comment__content i {
+    margin-top: 30px;
+    font-size: 2.45rem;
+  }
+  section.comments .comments__container .comments__wrapper .comment__card .card__content .comment__content p {
+    font-size: 1.05rem;
+    padding: 0.5rem 0.45rem;
+    text-align: left;
+  }
+
+  section.footer .footer__container .footer__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  section.footer .footer__container .footer__wrapper .col {
+    padding: 10px 0;
+    margin-left: -30px;
   }
 }
 @media screen and (max-width: 480px) {
