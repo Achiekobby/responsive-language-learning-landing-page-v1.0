@@ -15,7 +15,7 @@ CloseBtn.addEventListener("click", () => {
 const scrollReveal = ScrollReveal({
   reset: true,
   duration: 2000,
-  origin: "top",
+  origin: "bottom",
   distance: "30px",
 });
 
